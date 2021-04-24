@@ -1,0 +1,39 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+{% load static %}
+
+<h1 align="center" ><strong>  SIAGON PORTFOLIO </strong></h1>
+<br>
+<img src="{% static 'portfolio/wallpaper.jpg'%}" width="75%" height="50%" class="rounded mx-auto d-block">
+<br>
+<div class="row justify-content-center mb-3" >
+  <div class="col-md-9 text-center">
+      <h2><strong>Phillip is the man in charge of SIAGON 😊</strong></h2>
+  </div>
+</div>
+
+<h2 class="mt-5">Portfolio</h2>
+<hr>
+
+<div class="row" >
+  {% for project in projects %}
+  <div class="col-lg-4 col-md-6">
+
+      {% if project.url %}
+      <a href="{{ project.url }}">
+        <img src="{{ project.image.url }}" class=" img-thumbnail ">
+      </a>
+      {% else %}
+
+      <img src="{{ project.image.url }}" class=" img-thumbnail ">
+      {% endif %}
+
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

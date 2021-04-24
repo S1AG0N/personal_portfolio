@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/django3-personal-portfolio-master/.idea/django3-personal-portfolio-master.iml" filepath="$USER_HOME$/Downloads/django3-personal-portfolio-master/.idea/django3-personal-portfolio-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/persnal_portfolio.iml" filepath="$PROJECT_DIR$/.idea/persnal_portfolio.iml" />
+    </modules>
+  </component>
+</project>
