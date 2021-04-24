@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+<body>
+
+<div class="container" align="center">
+    <h1>About SIAGON</h1>
+    <br>
+    <p>SIAGON was found in 2020 with the theme of harnessing diverse technologies in solutions implementation.
+        <br> Success is a game of numbers.
+        <br>As SIAGON the number on our projects is as follows:<br></p>
+
+    <h3><strong>{{ pro.count }}</strong> project{{ pro.count|pluralize }}</h3>
+
+</div>
+</body>
+
+{% endblock %}
